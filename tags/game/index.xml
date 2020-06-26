@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Game on 小墨魚的話家常</title>
+    <link>https://3mofstudy.github.io/tags/game/</link>
+    <description>Recent content in Game on 小墨魚的話家常</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Fri, 26 Jun 2020 10:07:47 +0800</lastBuildDate>
+    
+	<atom:link href="https://3mofstudy.github.io/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo 文章開頭格式</title>
+      <link>https://3mofstudy.github.io/blog/test/</link>
+      <pubDate>Fri, 26 Jun 2020 10:07:47 +0800</pubDate>
+      
+      <guid>https://3mofstudy.github.io/blog/test/</guid>
+      <description>Markdown 語法介紹 &amp;gt;是引言
+ Shortcodes 使用 短網址使用範例
+Yutober   tweet Hugo 0.</description>
+    </item>
+    
+  </channel>
+</rss>
