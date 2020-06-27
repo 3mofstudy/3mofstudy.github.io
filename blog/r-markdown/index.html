@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>小墨魚的資料科學筆記</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="如何使用RStudio內建功能來寫Markdown格式文章">
+  <meta name="author" content="3mofstudy">
+  <meta name="generator" content="Hugo 0.71.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://3mofstudy.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://3mofstudy.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://3mofstudy.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://3mofstudy.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://3mofstudy.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://3mofstudy.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://3mofstudy.github.io/images/favicon.png " type="image/x-icon">
+
+  
+  <script data-ad-client="ca-pub-5242013035951700" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head><body><!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://3mofstudy.github.io"><img class="img-fluid"
+          src="https://3mofstudy.github.io/images/logo.png" alt="小墨魚的資料科學筆記"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/study.jessica/"><i class="ti-facebook"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/3mofstudy"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://3mofstudy.github.io"><img class="img-fluid"
+            src="https://3mofstudy.github.io/images/logo.png" alt="小墨魚的資料科學筆記"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://3mofstudy.github.io/">首頁</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://3mofstudy.github.io/about">關於我</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://3mofstudy.github.io/blog">文章</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://3mofstudy.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-11 mx-auto">
+        
+        <a href="/categories/%e5%85%b6%e4%bb%96"
+          class="text-primary">其他</a>
+        
+        <h2>Markdown</h2>
+        <div class="mb-3 post-meta">
+          <span>By 3mofstudy</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>26 June 2020</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <hr>
+<h2 id="1-段落標題-使用">1. 段落標題 使用</h2>
+<p>文章中每個段落通常會有個標題，我們可以使用一個井字號 #代表一層標題，一個#代表一層標題，，##代表二層標題，以此類推，最高可以定義六層標題</p>
+<pre><code>#  第一層標題
+## 第二層標題
+### 第三層標題
+#### 第四層標題
+##### 第五層標題
+###### 第六層標題
+</code></pre><p>結果呈現如下</p>
+<h1 id="第一層標題">第一層標題</h1>
+<h2 id="第二層標題">第二層標題</h2>
+<h3 id="第三層標題">第三層標題</h3>
+<h4 id="第四層標題">第四層標題</h4>
+<h5 id="第五層標題">第五層標題</h5>
+<h6 id="第六層標題">第六層標題</h6>
+<hr>
+<h2 id="2-換行">2. 換行</h2>
+<p>每行文字最後，留下至少兩個空白再Enter，即可換行</p>
+<pre><code>***換行***  ,          
+___換行___        
+</code></pre><p><em><strong>換行</strong></em>  ,       <br>
+<em><strong>換行</strong></em></p>
+<hr>
+<h2 id="3-強調語法-使用">3. 強調語法 使用</h2>
+<h5 id="3-1-斜體">3-1 斜體</h5>
+<p>文字前後 加上一個* 或 _ ，可以使文字成 斜體，例如下段文字</p>
+<pre><code>*asterisks* , _underscores_      
+</code></pre><p><em>asterisks</em> ,  <em>underscores</em></p>
+<h4 id="2-2-粗體">2-2 粗體</h4>
+<p>文字前後 加上兩個* 或 _ ，可以使文字成 斜體，例如下段文字</p>
+<pre><code>**asterisks** , __underscores__
+</code></pre><p><strong>asterisks</strong> , <strong>underscores</strong></p>
+<h5 id="2-3-刪除線">2-3 刪除線</h5>
+<p>兩個波浪符號，可以將文字加上刪除線</p>
+<pre><code>~~Scratch this.~~
+</code></pre><p><del>Scratch this.</del></p>
+<h5 id="2-4-粗體斜線">2-4 粗體+斜線</h5>
+<p>三個星號或底線符號，可以將文字加上粗斜線</p>
+<pre><code>***asterisks***  , ___underscores___     
+</code></pre><p><em><strong>asterisks</strong></em>  , <em><strong>underscores</strong></em></p>
+<hr>
+<h3 id="shortcodes-使用">Shortcodes 使用</h3>
+<p><a href="https://gohugo.io/content-management/shortcodes/#readout">短網址使用範例</a></p>
+<h3 id="yutober">Yutober</h3>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Z_U-DXw6zX8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="tweet">tweet</h3>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hugo 0.24 Released: Big archetype update + <a href="https://twitter.com/Netlify?ref_src=twsrc%5Etfw">@Netlify</a> _redirects etc. file support<a href="https://t.co/X94FmYDEZJ">https://t.co/X94FmYDEZJ</a> <a href="https://twitter.com/hashtag/gohugo?src=hash&amp;ref_src=twsrc%5Etfw">#gohugo</a> <a href="https://twitter.com/hashtag/golang?src=hash&amp;ref_src=twsrc%5Etfw">#golang</a> <a href="https://twitter.com/spf13?ref_src=twsrc%5Etfw">@spf13</a> <a href="https://twitter.com/bepsays?ref_src=twsrc%5Etfw">@bepsays</a></p>&mdash; GoHugo.io (@GoHugoIO) <a href="https://twitter.com/GoHugoIO/status/877500564405444608?ref_src=twsrc%5Etfw">June 21, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h3 id="instagram">instagram</h3>
+
+
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BWNjjyYFxVx/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BWNjjyYFxVx/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BWNjjyYFxVx/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">#Talitha #Getty #yacht in #fjærland #fjærlandsfjorden #sognefjorden #mundal #norway #landscape #panorama #travel #instagoodmyphoto #justgoshoot #peoplescreatives #visualsoflife #photography #photoshoot #photodaily #photogram #instagood #picoftheday #fjærland #photooftheday #pentax #nrksf #sognavis</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/bepsays/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Bjørn Erik Pedersen</a> (@bepsays) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-07-06T16:27:46+00:00">Jul 6, 2017 at 9:27am PDT</time></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+<h3 id="程式碼">程式碼</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">print</span> (<span style="color:#b44">&#34;我是阿財&#34;</span>)
+<span style="color:#a2f;font-weight:bold">print</span> (<span style="color:#b44">&#34;我是阿財&#34;</span>)
+<span style="color:#a2f;font-weight:bold">print</span> (<span style="color:#b44">&#34;我是阿財&#34;</span>)
+<span style="color:#a2f;font-weight:bold">print</span> (<span style="color:#b44">&#34;我是阿財&#34;</span>)
+</code></pre></div><p><code>R</code></p>
+<h3 id="圖片">圖片</h3>
+<p><img src="https://i.pcmag.com/imagery/reviews/035PyujqNaronWjdk34AJ85-6.fit_scale.size_1028x578.v_1577496784.jpg" alt="122"></p>
+<p><img src="/images/favicon.png" alt="123"></p>
+<ol>
+<li>4456</li>
+<li>5555</li>
+</ol>
+<ul>
+<li>45555</li>
+<li>44444</li>
+</ul>
+<ol start="3">
+<li>55555</li>
+</ol>
+<hr>
+<blockquote>
+<p>其實網路上蠻多Markdown語法教學，但是說真的自己還是要親自嘗試一次才會熟練，雖然也是教Markdown，但我這次想使用RStudio</p>
+</blockquote>
+<h1 id="反斜線-">反斜線 \</h1>
+<p>如果你有寫過正則表達式，你應該用過 “\” 反斜線，反斜線也可以幫你顯示某些特殊字元。</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<script>
+  var indexURL = "https://3mofstudy.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://3mofstudy.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://3mofstudy.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://3mofstudy.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://3mofstudy.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://3mofstudy.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://3mofstudy.github.io/plugins/search/mark.js"></script>
+
+<script src="https://3mofstudy.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://3mofstudy.github.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-159571986-1', 'auto');
+  ga('send', 'pageview');
+</script></body>
+</html>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>小墨魚的資料科學筆記</title>
-    <link>https://3mofstudy.github.io/</link>
-    <description>Recent content on 小墨魚的資料科學筆記</description>
+    <title>Markdown on 小墨魚的資料科學筆記</title>
+    <link>https://3mofstudy.github.io/tags/markdown/</link>
+    <description>Recent content in Markdown on 小墨魚的資料科學筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 26 Jun 2020 13:49:23 +0600</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2020 10:07:47 +0800</lastBuildDate>
     
-	<atom:link href="https://3mofstudy.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://3mofstudy.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       <guid>https://3mofstudy.github.io/blog/r-markdown/</guid>
       <description>1. 段落標題 使用 文章中每個段落通常會有個標題，我們可以使用一個井字號 #代表一層標題，一個#代表一層標題，，##代表二層標題，以此類推，最高可以定義六層標題
 # 第一層標題## 第二層標題### 第三層標題#### 第四層標題##### 第五層標題###### 第六層標題結果呈現如下</description>
-    </item>
-    
-    <item>
-      <title>R 日期函數</title>
-      <link>https://3mofstudy.github.io/blog/rdate/</link>
-      <pubDate>Fri, 26 Jun 2020 10:07:47 +0800</pubDate>
-      
-      <guid>https://3mofstudy.github.io/blog/rdate/</guid>
-      <description></description>
     </item>
     
   </channel>

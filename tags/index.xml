@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 小墨魚科技新知</title>
+    <title>Tags on 小墨魚的資料科學筆記</title>
     <link>https://3mofstudy.github.io/tags/</link>
-    <description>Recent content in Tags on 小墨魚科技新知</description>
+    <description>Recent content in Tags on 小墨魚的資料科學筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Fri, 26 Jun 2020 10:07:47 +0800</lastBuildDate>
@@ -12,20 +12,20 @@
     
     
     <item>
-      <title>Game</title>
-      <link>https://3mofstudy.github.io/tags/game/</link>
+      <title>Date</title>
+      <link>https://3mofstudy.github.io/tags/date/</link>
       <pubDate>Fri, 26 Jun 2020 10:07:47 +0800</pubDate>
       
-      <guid>https://3mofstudy.github.io/tags/game/</guid>
+      <guid>https://3mofstudy.github.io/tags/date/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Photos</title>
-      <link>https://3mofstudy.github.io/tags/photos/</link>
+      <title>Markdown</title>
+      <link>https://3mofstudy.github.io/tags/markdown/</link>
       <pubDate>Fri, 26 Jun 2020 10:07:47 +0800</pubDate>
       
-      <guid>https://3mofstudy.github.io/tags/photos/</guid>
+      <guid>https://3mofstudy.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     

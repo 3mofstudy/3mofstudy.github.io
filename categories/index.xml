@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on 小墨魚科技新知</title>
+    <title>Categories on 小墨魚的資料科學筆記</title>
     <link>https://3mofstudy.github.io/categories/</link>
-    <description>Recent content in Categories on 小墨魚科技新知</description>
+    <description>Recent content in Categories on 小墨魚的資料科學筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Fri, 26 Jun 2020 10:07:47 +0800</lastBuildDate>
@@ -12,11 +12,20 @@
     
     
     <item>
-      <title>心得</title>
-      <link>https://3mofstudy.github.io/categories/%E5%BF%83%E5%BE%97/</link>
+      <title>R</title>
+      <link>https://3mofstudy.github.io/categories/r/</link>
       <pubDate>Fri, 26 Jun 2020 10:07:47 +0800</pubDate>
       
-      <guid>https://3mofstudy.github.io/categories/%E5%BF%83%E5%BE%97/</guid>
+      <guid>https://3mofstudy.github.io/categories/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>其他</title>
+      <link>https://3mofstudy.github.io/categories/%E5%85%B6%E4%BB%96/</link>
+      <pubDate>Fri, 26 Jun 2020 10:07:47 +0800</pubDate>
+      
+      <guid>https://3mofstudy.github.io/categories/%E5%85%B6%E4%BB%96/</guid>
       <description></description>
     </item>
     
