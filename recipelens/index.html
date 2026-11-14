@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>食影筆記 RecipeLens｜小墨魚工作室</title>
+  <meta name="description" content="食影筆記把 YouTube、Facebook 料理影片整理成繁體中文食譜與步驟截圖，存成 Markdown、PDF、Word，並可上傳到 Google 雲端硬碟。">
+  <link rel="icon" href="/recipelens/icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="回到小墨魚工作室首頁">
+        <img src="/favicon.svg" alt="" width="34" height="34">
+        小墨魚工作室
+      </a>
+      <nav class="site-nav" aria-label="主要">
+        <a href="/#works" aria-current="page">作品</a>
+        <a href="/#about">關於</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="app-hero">
+      <div class="wrap">
+        <img src="/recipelens/icon.png" alt="食影筆記圖示" width="144" height="144">
+        <div>
+          <h1>食影筆記</h1>
+          <p class="en">RecipeLens，適用 Windows 10、11（64 位元）</p>
+          <p class="lead">把喜歡的料理影片，收藏成自己的食譜。貼上網址，食材、做法和關鍵步驟截圖就整理好了。</p>
+          <div class="actions">
+            <a class="button" href="https://github.com/3mofstudy/RecipeLens/releases/latest/download/RecipeLens-Setup.exe">下載 Windows 版</a>
+            <a href="https://github.com/3mofstudy/RecipeLens/releases">所有版本</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="how-title">
+      <div class="wrap">
+        <h2 id="how-title">怎麼用</h2>
+        <ol class="steps">
+          <li>
+            <h3>貼上影片網址</h3>
+            <p>支援 YouTube 與 Facebook 的公開料理影片，App 會自動判斷平台。</p>
+          </li>
+          <li>
+            <h3>AI 整理食譜</h3>
+            <p>用你電腦上的 ChatGPT（Codex）或 Claude 判讀字幕、資訊欄與畫面。影片沒有字幕時，在你的電腦上做語音辨識。</p>
+          </li>
+          <li>
+            <h3>存檔，也可上傳</h3>
+            <p>食譜和截圖存成 Markdown、PDF、Word 檔。想在手機上看，可以一起上傳到自己的 Google 雲端硬碟。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="need-title">
+      <div class="wrap">
+        <h2 id="need-title">需要準備</h2>
+        <dl class="facts">
+          <dt>電腦</dt>
+          <dd>Windows 10 或 11（64 位元）。FFmpeg、yt-dlp 等工具已包含在安裝程式內。</dd>
+          <dt>AI 工具（擇一）</dt>
+          <dd>ChatGPT 桌面版的 Codex（免費帳號可用部分模型），或 Claude 桌面版的 Claude Code（需 Claude Pro 以上方案）。</dd>
+          <dt>Google 帳號</dt>
+          <dd>只有要上傳到 Google 雲端硬碟時才需要。</dd>
+          <dt>費用</dt>
+          <dd>食影筆記免費。AI 判讀的用量算在你自己的 ChatGPT 或 Claude 方案。</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="drive-title">
+      <div class="wrap">
+        <h2 id="drive-title">Google 雲端硬碟上傳</h2>
+        <div class="note">
+          <p>第一次上傳時，食影筆記會請你登入 Google，只要求「查看、編輯、建立及刪除這個應用程式所使用的 Google 雲端硬碟檔案」這項權限。它看不到、也不會讀取你雲端硬碟裡的其他檔案。</p>
+          <p>食影筆記會在「我的雲端硬碟」建立「食影筆記」資料夾，你可以在裡面新增子資料夾、選擇存放位置。每份食譜會有自己的資料夾，放入你選的格式與步驟截圖。</p>
+          <p>檔案直接從你的電腦上傳到你的雲端硬碟，不經過小墨魚工作室的伺服器。詳細說明見<a href="/recipelens/privacy.html">隱私權政策</a>。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="install-title">
+      <div class="wrap">
+        <h2 id="install-title">安裝提醒</h2>
+        <p>安裝程式目前還沒有程式碼簽章。Windows 若顯示「Windows 已保護您的電腦」，按「其他資訊」再按「仍要執行」即可安裝。安裝不需要系統管理員權限，可以從 Windows「設定」裡的「應用程式」解除安裝。</p>
+        <p>遇到問題，寫信到 <a href="mailto:contact@3mofstudy.app">contact@3mofstudy.app</a>，或在 <a href="https://github.com/3mofstudy/RecipeLens/issues">GitHub</a> 回報。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <span>© 2026 小墨魚工作室</span>
+      <nav aria-label="頁尾">
+        <a href="/recipelens/privacy.html">隱私權政策</a>
+        <a href="mailto:contact@3mofstudy.app">聯絡我們</a>
+        <a href="https://github.com/3mofstudy/RecipeLens">原始碼</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

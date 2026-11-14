@@ -1,0 +1,152 @@
+/* 小墨魚工作室：霧藍底、墨色字、墨魚色素胞的粉紅作為唯一強調色。 */
+:root {
+  --mist: #EEF3F5;
+  --foam: #FFFFFF;
+  --ink: #18263A;
+  --tide: #4C6B85;
+  --line: #C9D6DE;
+  --chroma: #C9456A;
+  --chroma-soft: #F6DCE3;
+  --brush: "LXGW WenKai TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  --body: "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --measure: 36em;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--mist);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+a { color: var(--ink); text-decoration-color: var(--chroma); text-underline-offset: 0.25em; text-decoration-thickness: 2px; }
+a:hover { color: var(--chroma); }
+:focus-visible { outline: 3px solid var(--chroma); outline-offset: 3px; border-radius: 4px; }
+
+.wrap { width: min(68rem, 100% - 3rem); margin-inline: auto; }
+
+/* 頁首 */
+.site-head { padding-block: 1.5rem; }
+.site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.brand { display: inline-flex; align-items: center; gap: 0.6rem; font-family: var(--brush); font-size: 1.35rem; font-weight: 700; text-decoration: none; }
+.brand img { width: 2.1rem; height: 2.1rem; }
+.site-nav { display: flex; gap: 1.5rem; font-size: 0.95rem; }
+.site-nav a { text-decoration: none; color: var(--tide); }
+.site-nav a:hover, .site-nav a[aria-current] { color: var(--ink); }
+
+/* 首頁主視覺：大字書寫體與一隻放出墨汁的墨魚 */
+.hero { padding-block: clamp(3rem, 9vw, 7rem) clamp(3rem, 7vw, 5rem); }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); align-items: center; gap: 2rem; }
+.hero h1 {
+  font-family: var(--brush);
+  font-weight: 700;
+  font-size: clamp(3.2rem, 10vw, 7.5rem);
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  margin: 0 0 1.5rem;
+}
+.hero p { max-width: 24em; font-size: 1.2rem; color: var(--tide); margin: 0; }
+.squid { width: 100%; max-width: 22rem; justify-self: end; overflow: visible; }
+.squid .ink circle { fill: var(--ink); transform-box: fill-box; transform-origin: center; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .squid .body { animation: dart 1.4s cubic-bezier(.2,.8,.2,1) both; }
+  .squid .ink circle { animation: puff 2.2s ease-out both; }
+  .squid .ink circle:nth-child(2) { animation-delay: .12s; }
+  .squid .ink circle:nth-child(3) { animation-delay: .24s; }
+  .squid .ink circle:nth-child(4) { animation-delay: .36s; }
+  .squid .ink circle:nth-child(5) { animation-delay: .48s; }
+}
+@keyframes dart { from { transform: translate(-6%, 14%); } to { transform: none; } }
+@keyframes puff { from { transform: scale(.2); opacity: .9; } to { transform: scale(1); opacity: .16; } }
+.squid .ink circle { opacity: .16; }
+
+/* 區塊 */
+.section { padding-block: clamp(3rem, 7vw, 5rem); border-top: 1px solid var(--line); }
+.section h2 { font-family: var(--brush); font-weight: 700; font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1.3; margin: 0 0 1.5rem; }
+.section > .wrap > p { max-width: var(--measure); }
+
+/* 作品：一款 App 一列，圖示 + 說明 + 動作 */
+.app-row { display: grid; grid-template-columns: 7rem minmax(0, 1fr); gap: 2rem; align-items: start; background: var(--foam); border-radius: 28px; padding: clamp(1.5rem, 4vw, 2.5rem); }
+.app-row img { width: 7rem; height: 7rem; border-radius: 22px; }
+.app-row h3 { font-family: var(--brush); font-size: 2rem; margin: 0; line-height: 1.2; }
+.app-row .en { color: var(--tide); font-size: 0.95rem; margin: 0.25rem 0 1rem; }
+.app-row p { max-width: var(--measure); margin: 0 0 1.25rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; align-items: center; }
+.next { color: var(--tide); font-size: 0.95rem; margin-top: 1.5rem; }
+
+.button {
+  display: inline-block;
+  background: var(--chroma);
+  color: var(--foam);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+}
+.button:hover { color: var(--foam); background: var(--ink); }
+
+/* App 頁 */
+.app-hero { padding-block: clamp(2.5rem, 7vw, 5rem); }
+.app-hero .wrap { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 2rem; align-items: center; }
+.app-hero img { width: clamp(6rem, 16vw, 9rem); height: auto; border-radius: 26px; }
+.app-hero h1 { font-family: var(--brush); font-size: clamp(2.8rem, 8vw, 5rem); line-height: 1.1; margin: 0; }
+.app-hero .en { color: var(--tide); margin: 0.3rem 0 1rem; }
+.app-hero p.lead { font-size: 1.2rem; max-width: 26em; margin: 0 0 1.5rem; }
+
+.steps { list-style: none; counter-reset: step; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+.steps li { counter-increment: step; }
+.steps li::before {
+  content: counter(step);
+  display: grid; place-items: center;
+  width: 2.6rem; height: 2.6rem; border-radius: 50%;
+  background: var(--chroma-soft); color: var(--chroma);
+  font-family: var(--brush); font-weight: 700; font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+.steps h3 { font-size: 1.1rem; margin: 0 0 0.4rem; }
+.steps p { margin: 0; color: var(--tide); }
+
+.facts { display: grid; grid-template-columns: minmax(8rem, 12rem) minmax(0, 1fr); gap: 0.75rem 2rem; margin: 0; max-width: 48rem; }
+.facts dt { font-weight: 700; }
+.facts dd { margin: 0; }
+
+.note { background: var(--foam); border-left: 4px solid var(--chroma); border-radius: 0 16px 16px 0; padding: 1.25rem 1.5rem; max-width: 48rem; }
+.note p { margin: 0 0 0.75rem; }
+.note p:last-child { margin: 0; }
+
+/* 隱私權政策：中英並列 */
+.policy-head { padding-block: clamp(2.5rem, 6vw, 4rem) 1.5rem; }
+.policy-head h1 { font-family: var(--brush); font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.2; margin: 0 0 0.5rem; }
+.policy-head p { color: var(--tide); margin: 0.25rem 0; max-width: 48rem; }
+.policy-head p span[lang="en"] { display: block; }
+.policy section { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1rem 3rem; padding-block: 2rem; border-top: 1px solid var(--line); }
+.policy h2 { font-family: var(--brush); font-size: 1.45rem; line-height: 1.35; margin: 0 0 0.5rem; }
+.policy [lang="en"] h2 { font-family: var(--body); font-size: 1.15rem; }
+.policy [lang="en"] { color: #2B3D52; font-size: 0.98rem; line-height: 1.7; }
+.policy p, .policy ul { margin: 0 0 0.75rem; }
+.policy ul { padding-left: 1.25rem; }
+
+/* 頁尾 */
+.site-foot { border-top: 1px solid var(--line); padding-block: 2rem 3rem; color: var(--tide); font-size: 0.92rem; }
+.site-foot .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; }
+.site-foot nav { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+.site-foot a { color: var(--tide); }
+
+@media (max-width: 760px) {
+  .hero .wrap { grid-template-columns: 1fr; }
+  .squid { max-width: 12rem; justify-self: start; order: -1; }
+  .app-row { grid-template-columns: 1fr; }
+  .app-row img { width: 5.5rem; height: 5.5rem; }
+  .app-hero .wrap { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
+  .facts { grid-template-columns: 1fr; gap: 0.2rem; }
+  .facts dd { margin-bottom: 0.9rem; }
+  .policy section { grid-template-columns: 1fr; }
+}
