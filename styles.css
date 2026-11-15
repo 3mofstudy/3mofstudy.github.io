@@ -301,3 +301,6 @@ code { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-siz
 pre.code { background: var(--ink); color: #F3F1FF; border: 2.5px solid var(--line); border-radius: var(--r-md); padding: 1rem 1.25rem; overflow-x: auto; box-shadow: var(--pop); max-width: 50rem; }
 pre.code code { background: none; padding: 0; color: inherit; }
 .card-top.sky { background: var(--sky); }
+
+/* 長網址自動換行 */
+.facts dd a { overflow-wrap: anywhere; }
