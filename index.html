@@ -3,24 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>小墨魚工作室</title>
-  <meta name="description" content="小墨魚工作室：替日常生活做好用的繁體中文電腦小工具。作品包含食影筆記，把料理影片整理成食譜。">
+  <title>小墨魚異想天空工作室｜統計、R 與好用的小工具</title>
+  <meta name="description" content="小墨魚異想天空工作室：白天做統計分析，晚上寫字、做好用的繁體中文小工具。作品有食影筆記、R 語言自我筆記電子書，也提供統計家教與論文統計諮詢。">
+  <meta name="theme-color" content="#FFF8EE">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <header class="site-head">
     <div class="wrap">
-      <a class="brand" href="/" aria-label="小墨魚工作室首頁">
-        <img src="/favicon.svg" alt="" width="34" height="34">
-        小墨魚工作室
+      <a class="brand" href="/" aria-label="小墨魚異想天空工作室首頁">
+        <img src="/favicon.svg" alt="" width="38" height="38">
+        小墨魚異想天空工作室
       </a>
       <nav class="site-nav" aria-label="主要">
-        <a href="#works">作品</a>
-        <a href="#about">關於</a>
+        <a href="/#works">作品</a>
+        <a href="/#links">找到我</a>
+        <a href="/#about">關於</a>
       </nav>
     </div>
   </header>
@@ -29,73 +31,295 @@
     <section class="hero">
       <div class="wrap">
         <div>
-          <h1>小墨魚<br>工作室</h1>
-          <p>一個人的小工作室，替日常生活做好用的電腦小工具。介面全是繁體中文，在台灣慢慢做。</p>
+          <span class="hello">嗨，我是露西，也是小墨魚 ✦</span>
+          <h1>小墨魚<br><span class="mark">異想天空</span><br>工作室</h1>
+          <p class="lead">白天和數據打交道，做統計分析與建模；晚上讀書、寫字，順手做一些自己天天會用的小工具。這裡收著我的作品，還有我在網路上的幾個小窩。</p>
+          <div class="actions">
+            <a class="button" href="#works">逛逛作品</a>
+            <a class="button ghost" href="#links">找到我</a>
+          </div>
         </div>
-        <svg class="squid" viewBox="0 0 220 260" role="img" aria-label="一隻噴出墨汁的小墨魚">
-          <g class="ink">
-            <circle cx="62" cy="214" r="34"/>
-            <circle cx="30" cy="236" r="22"/>
-            <circle cx="96" cy="240" r="18"/>
-            <circle cx="40" cy="190" r="14"/>
-            <circle cx="14" cy="210" r="9"/>
-          </g>
-          <g transform="rotate(32 130 110)"><g class="body">
-            <path d="M104 46 L80 76 L106 80 Z" fill="#18263A"/>
-            <path d="M156 46 L180 76 L154 80 Z" fill="#18263A"/>
-            <path d="M130 8 C156 24 162 60 158 104 L102 104 C98 60 104 24 130 8 Z" fill="#18263A"/>
-            <g fill="none" stroke="#18263A" stroke-width="7" stroke-linecap="round">
-              <path d="M110 102 C102 124 116 140 104 168"/>
-              <path d="M124 102 C120 130 130 146 122 176"/>
-              <path d="M136 102 C140 130 130 146 138 176"/>
-              <path d="M150 102 C158 124 144 140 156 168"/>
-            </g>
-            <circle cx="118" cy="88" r="6" fill="#EEF3F5"/>
-            <circle cx="142" cy="88" r="6" fill="#EEF3F5"/>
-            <circle cx="122" cy="44" r="4" fill="#C9456A"/>
-            <circle cx="138" cy="56" r="3" fill="#C9456A"/>
-            <circle cx="126" cy="66" r="2.4" fill="#C9456A"/>
-          </g></g>
-        </svg>
+        <div class="hero-art">
+          <svg class="squid" viewBox="0 0 320 320" role="img" aria-label="一隻三花貓坐在書桌前，左耳別著小墨魚髮夾，旁邊有一台顯示 R 圖表的筆電和一杯寫著 Lucy 的咖啡">
+  <defs>
+    <clipPath id="catHead"><path d="M160 66 C222 66 250 104 248 148 C246 190 210 206 160 206 C110 206 74 190 72 148 C70 104 98 66 160 66 Z"/></clipPath>
+    <clipPath id="catBody"><path d="M92 254 C90 204 112 184 160 184 C208 184 230 204 228 254 Z"/></clipPath>
+  </defs>
+  <!-- 尾巴 -->
+  <path class="tail" d="M222 240 C262 236 272 200 252 178 C244 170 234 176 240 186 C252 202 244 222 220 226" fill="#3E3633" stroke="#2B2F4A" stroke-width="4.5" stroke-linejoin="round"/>
+  <!-- 身體 -->
+  <path d="M92 254 C90 204 112 184 160 184 C208 184 230 204 228 254 Z" fill="#FFFDF7" stroke="#2B2F4A" stroke-width="4.5"/>
+  <g clip-path="url(#catBody)">
+    <path d="M196 180 C238 186 244 230 236 260 L200 260 C204 232 190 208 196 180 Z" fill="#F3A04F"/>
+  </g>
+  <path d="M92 254 C90 204 112 184 160 184 C208 184 230 204 228 254" fill="none" stroke="#2B2F4A" stroke-width="4.5"/>
+  <g class="head">
+    <!-- 耳朵：左耳橘、右耳黑 -->
+    <g stroke="#2B2F4A" stroke-width="4.5" stroke-linejoin="round">
+      <path d="M88 118 L86 46 Q88 34 99 41 L142 76 Z" fill="#F3A04F"/>
+      <path class="ear-r" d="M232 118 L234 46 Q232 34 221 41 L178 76 Z" fill="#3E3633"/>
+    </g>
+    <path d="M97 98 L96 56 L126 80 Z" fill="#FFB8C3"/>
+    <path d="M223 98 L224 56 L194 80 Z" fill="#E98C9C"/>
+    <!-- 頭 -->
+    <path d="M160 66 C222 66 250 104 248 148 C246 190 210 206 160 206 C110 206 74 190 72 148 C70 104 98 66 160 66 Z" fill="#FFFDF7"/>
+    <g clip-path="url(#catHead)">
+      <path d="M60 56 C112 50 146 66 146 100 C146 132 112 146 64 140 Z" fill="#F3A04F"/>
+      <path d="M262 56 C212 50 176 64 176 98 C176 124 208 138 262 132 Z" fill="#3E3633"/>
+    </g>
+    <path d="M160 66 C222 66 250 104 248 148 C246 190 210 206 160 206 C110 206 74 190 72 148 C70 104 98 66 160 66 Z" fill="none" stroke="#2B2F4A" stroke-width="4.5"/>
+    <!-- 臉 -->
+    <circle cx="124" cy="144" r="14" fill="#2B2F4A"/>
+    <circle cx="196" cy="144" r="14" fill="#2B2F4A"/>
+    <circle cx="119" cy="138" r="5" fill="#fff"/><circle cx="191" cy="138" r="5" fill="#fff"/>
+    <circle cx="129" cy="150" r="2.2" fill="#fff"/><circle cx="201" cy="150" r="2.2" fill="#fff"/>
+    <ellipse cx="104" cy="170" rx="12" ry="7" fill="#FF8FA0" opacity=".8"/>
+    <ellipse cx="216" cy="170" rx="12" ry="7" fill="#FF8FA0" opacity=".8"/>
+    <path d="M153 160 h14 l-7 8 Z" fill="#F07C8E" stroke="#2B2F4A" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M148 172 q6 7 12 0 q6 7 12 0" fill="none" stroke="#2B2F4A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g stroke="#2B2F4A" stroke-width="2.6" stroke-linecap="round">
+      <path d="M90 160 L56 154"/><path d="M90 168 L54 170"/>
+      <path d="M230 160 L264 154"/><path d="M230 168 L266 170"/>
+    </g>
+    <!-- 小墨魚髮夾（別在貓自己的右耳＝畫面左邊） -->
+    <g class="clip" transform="translate(110 80) rotate(-24) scale(1.4)">
+      <rect x="-20" y="10" width="40" height="7" rx="3.5" fill="#FFE7A3" stroke="#2B2F4A" stroke-width="2.5"/>
+      <g stroke="#2B2F4A" stroke-width="2.5" stroke-linejoin="round" fill="#7F8FD6">
+        <path d="M-9 -2 L-17 -12 L-5 -9 Z"/>
+        <path d="M9 -2 L17 -12 L5 -9 Z"/>
+        <path d="M0 -20 C11 -20 14 -9 13 1 C12 8 7 10 0 10 C-7 10 -12 8 -13 1 C-14 -9 -11 -20 0 -20 Z"/>
+      </g>
+      <g fill="none" stroke="#2B2F4A" stroke-width="5.5" stroke-linecap="round"><path d="M-7 10 q-2 6 1 11"/><path d="M0 11 v11"/><path d="M7 10 q2 6 -1 11"/></g>
+      <g fill="none" stroke="#7F8FD6" stroke-width="2.6" stroke-linecap="round"><path d="M-7 10 q-2 6 1 11"/><path d="M0 11 v11"/><path d="M7 10 q2 6 -1 11"/></g>
+      <circle cx="-4.6" cy="-1.5" r="2.3" fill="#2B2F4A"/><circle cx="4.6" cy="-1.5" r="2.3" fill="#2B2F4A"/>
+      <circle cx="-5.3" cy="-2.3" r=".8" fill="#fff"/><circle cx="3.9" cy="-2.3" r=".8" fill="#fff"/>
+      <ellipse cx="-8.4" cy="3" rx="2.4" ry="1.5" fill="#FF8FA0"/><ellipse cx="8.4" cy="3" rx="2.4" ry="1.5" fill="#FF8FA0"/>
+      <path d="M-3 2.6 q3 3.4 6 0" fill="none" stroke="#2B2F4A" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="3" cy="-13" r="1.6" fill="#fff" opacity=".7"/>
+    </g>
+  </g>
+  <!-- 書桌 -->
+  <rect x="6" y="250" width="308" height="22" rx="11" fill="#E8C49A" stroke="#2B2F4A" stroke-width="4.5"/>
+  <!-- 前腳 -->
+  <g fill="#FFFDF7" stroke="#2B2F4A" stroke-width="4">
+    <ellipse cx="134" cy="250" rx="17" ry="11"/>
+    <ellipse cx="186" cy="250" rx="17" ry="11"/>
+  </g>
+  <g stroke="#2B2F4A" stroke-width="2.5" stroke-linecap="round"><path d="M129 252 v-5"/><path d="M139 252 v-5"/><path d="M181 252 v-5"/><path d="M191 252 v-5"/></g>
+  <!-- 筆電 -->
+  <g stroke="#2B2F4A" stroke-width="4" stroke-linejoin="round">
+    <path d="M30 168 L104 180 L100 246 L22 236 Z" fill="#8E93A8"/>
+    <path d="M37 177 L97 187 L94 238 L30 229 Z" fill="#fff" stroke-width="2.5"/>
+    <path d="M14 240 L104 248 L112 252 L10 252 Z" fill="#B6BACB"/>
+  </g>
+  <text x="42" y="200" font-family="Huninn, sans-serif" font-size="15" fill="#3D6FD1" transform="rotate(8 42 200)">R</text>
+  <g fill="#3D6FD1"><circle cx="52" cy="222" r="2.4"/><circle cx="62" cy="216" r="2.4"/><circle cx="70" cy="219" r="2.4"/><circle cx="78" cy="208" r="2.4"/><circle cx="87" cy="203" r="2.4"/></g>
+  <path d="M46 228 L92 200" stroke="#FF5E6C" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- 咖啡 -->
+  <g class="steam" fill="none" stroke="#2B2F4A" stroke-width="3" stroke-linecap="round" opacity=".6">
+    <path d="M262 180 q-6 -8 0 -16 q6 -8 0 -16"/>
+    <path d="M278 182 q-6 -8 0 -16 q6 -8 0 -16"/>
+  </g>
+  <g stroke="#2B2F4A" stroke-width="4" stroke-linejoin="round">
+    <path d="M246 198 L296 198 L290 252 L252 252 Z" fill="#9A6A45"/>
+    <rect x="240" y="188" width="62" height="12" rx="5" fill="#F4EDE3"/>
+    <path d="M249 214 L293 214 L290 238 L252 238 Z" fill="#FFF3DC" stroke-width="3"/>
+  </g>
+  <text x="271" y="231" text-anchor="middle" font-family="Huninn, sans-serif" font-size="12" fill="#2B2F4A">Lucy</text>
+</svg>
+        </div>
       </div>
     </section>
 
+    <svg class="wave" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 Q25 0 50 14 Q75 28 100 14 Q125 0 150 14 Q175 28 200 14 Q225 0 250 14 Q275 28 300 14 Q325 0 350 14 Q375 28 400 14 Q425 0 450 14 Q475 28 500 14 Q525 0 550 14 Q575 28 600 14 Q625 0 650 14 Q675 28 700 14 Q725 0 750 14 Q775 28 800 14 Q825 0 850 14 Q875 28 900 14 Q925 0 950 14 Q975 28 1000 14 Q1025 0 1050 14 Q1075 28 1100 14 Q1125 0 1150 14 Q1175 28 1200 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round"/></svg>
+
     <section class="section" id="works" aria-labelledby="works-title">
       <div class="wrap">
-        <h2 id="works-title">作品</h2>
-        <article class="app-row">
-          <img src="/recipelens/icon.png" alt="食影筆記圖示" width="112" height="112">
-          <div>
-            <h3>食影筆記</h3>
-            <p class="en">RecipeLens，Windows 電腦版</p>
-            <p>貼上 YouTube 或 Facebook 料理影片的網址，自動整理成繁體中文食譜，附上關鍵步驟截圖，存成 Markdown、PDF 和 Word 檔，也能上傳到自己的 Google 雲端硬碟。</p>
-            <div class="actions">
-              <a class="button" href="https://github.com/3mofstudy/RecipeLens/releases/latest/download/RecipeLens-Setup.exe">下載 Windows 版</a>
-              <a href="/recipelens/">介紹與使用說明</a>
-              <a href="/recipelens/privacy.html">隱私權政策</a>
+        <h2 id="works-title"><svg class="dot" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="#FF5E6C" stroke="#2B2F4A" stroke-width="2.5"/><circle cx="7.5" cy="7.5" r="2" fill="#fff"/></svg>作品</h2>
+        <p class="sub">放在 GitHub 上公開的成品，每一個都有自己的介紹頁。</p>
+        <div class="cards">
+          <article class="card">
+            <div class="card-top coral">
+              <span class="kind">Windows App</span>
+              <img src="/projects/recipelens/icon.png" alt="食影筆記圖示" width="104" height="104">
+            </div>
+            <div class="card-body">
+              <h3>食影筆記</h3>
+              <p class="en">RecipeLens，Windows 電腦版</p>
+              <ul class="chips"><li>免費</li><li>AI 整理</li><li>Windows 10/11</li></ul>
+              <p>貼上 YouTube 或 Facebook 料理影片的網址，自動整理成繁體中文食譜，附上關鍵步驟截圖，存成 Markdown、PDF 和 Word 檔，也能上傳到自己的 Google 雲端硬碟。</p>
+              <div class="actions">
+                <a class="button" href="https://github.com/3mofstudy/RecipeLens/releases/latest/download/RecipeLens-Setup.exe">下載 Windows 版</a>
+                <a href="/projects/recipelens/">介紹與使用說明</a>
+                <a href="/projects/recipelens/privacy.html">隱私權政策</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top mint">
+              <span class="kind">小遊戲</span>
+              <svg viewBox="0 0 100 100" role="img" aria-label="地球守護隊圖示">
+  <rect x="2" y="2" width="96" height="96" rx="24" fill="#fff" stroke="#2B2F4A" stroke-width="4"/>
+  <circle cx="50" cy="56" r="30" fill="#A9DBF7" stroke="#2B2F4A" stroke-width="3.5"/>
+  <path d="M28 44 C36 38 44 44 42 52 C40 60 30 60 24 58 C22 52 24 48 28 44 Z" fill="#8FD18A" stroke="#2B2F4A" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M58 70 C64 64 74 66 76 72 C70 80 62 84 56 82 C54 78 54 74 58 70 Z" fill="#8FD18A" stroke="#2B2F4A" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M60 34 C66 32 72 36 70 42 C66 44 60 42 60 34 Z" fill="#8FD18A" stroke="#2B2F4A" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="43" cy="62" r="2.6" fill="#2B2F4A"/><circle cx="57" cy="62" r="2.6" fill="#2B2F4A"/>
+  <path d="M46 68 q4 4 8 0" fill="none" stroke="#2B2F4A" stroke-width="2.4" stroke-linecap="round"/>
+  <ellipse cx="38" cy="68" rx="3.4" ry="2" fill="#FF8FA0"/><ellipse cx="62" cy="68" rx="3.4" ry="2" fill="#FF8FA0"/>
+  <path d="M50 26 C50 16 58 10 68 12 C68 22 60 28 50 26 Z" fill="#5CC26B" stroke="#2B2F4A" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M51 25 L62 16" stroke="#2B2F4A" stroke-width="2" stroke-linecap="round"/>
+</svg>
+            </div>
+            <div class="card-body">
+              <h3>地球守護隊</h3>
+              <p class="en">綠能接接樂・Earth Guardians</p>
+              <ul class="chips"><li>免安裝</li><li>親子同樂</li><li>手機也能玩</li></ul>
+              <p>60 秒的 HTML5 接接樂：左右移動小熊，接住綠能寶物、閃開高污染物，中途還有氣候知識魔王題。打開網頁就能玩。</p>
+              <div class="actions">
+                <a class="button" href="/projects/earth-guardians-game/">看介紹</a>
+                <a href="https://3mofstudy.app/earth-guardians-game/">馬上玩</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top lilac">
+              <span class="kind">CLI 工具</span>
+              <svg viewBox="0 0 100 100" role="img" aria-label="blog-seo-ai 圖示">
+  <rect x="2" y="2" width="96" height="96" rx="24" fill="#fff" stroke="#2B2F4A" stroke-width="4"/>
+  <path d="M22 16 H58 L72 30 V82 H22 Z" fill="#E3DEFF" stroke="#2B2F4A" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M58 16 V30 H72" fill="#fff" stroke="#2B2F4A" stroke-width="3" stroke-linejoin="round"/>
+  <text x="30" y="40" font-family="Huninn, sans-serif" font-size="14" fill="#2B2F4A">.md</text>
+  <g stroke="#2B2F4A" stroke-width="3" stroke-linecap="round"><path d="M30 50 H54"/><path d="M30 58 H48"/><path d="M30 66 H44"/></g>
+  <circle cx="64" cy="64" r="13" fill="#fff" stroke="#2B2F4A" stroke-width="4"/>
+  <path d="M73 73 L84 84" stroke="#FF5E6C" stroke-width="7" stroke-linecap="round"/>
+  <path d="M60 60 q4 -4 8 0" fill="none" stroke="#FFC24B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M80 18 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5 Z" fill="#FFE7A3" stroke="#2B2F4A" stroke-width="2" stroke-linejoin="round"/>
+</svg>
+            </div>
+            <div class="card-body">
+              <h3>blog-seo-ai</h3>
+              <p class="en">部落格 SEO 小幫手</p>
+              <ul class="chips"><li>本地端</li><li>LLM</li><li>Markdown</li></ul>
+              <p>把部落格文章的 .md 丟進去，用 LLM 一次搞定最煩人的三件事：挑 SEO 關鍵字、寫 meta description、看懂圖片後給出有意義的檔名與 alt 文字。</p>
+              <div class="actions">
+                <a class="button" href="/projects/blog-seo-ai/">看介紹</a>
+                <a href="https://github.com/3mofstudy/blog-seo-ai">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top honey">
+              <span class="kind">空大作業</span>
+              <svg viewBox="0 0 100 100" role="img" aria-label="出遊小幫手圖示">
+  <rect x="2" y="2" width="96" height="96" rx="24" fill="#fff" stroke="#2B2F4A" stroke-width="4"/>
+  <path d="M14 34 L36 26 L62 34 L86 26 V72 L62 80 L36 72 L14 80 Z" fill="#CDEFE3" stroke="#2B2F4A" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M36 26 V72 M62 34 V80" stroke="#2B2F4A" stroke-width="2.5" stroke-dasharray="4 4"/>
+  <path d="M22 62 q10 -10 20 -2 t22 -4" fill="none" stroke="#FFC24B" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 6"/>
+  <path d="M66 58 C58 46 52 40 52 32 C52 23 59 17 66 17 C73 17 80 23 80 32 C80 40 74 46 66 58 Z" fill="#FF5E6C" stroke="#2B2F4A" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="66" cy="32" r="5.5" fill="#fff" stroke="#2B2F4A" stroke-width="2.5"/>
+</svg>
+            </div>
+            <div class="card-body">
+              <h3>出遊小幫手</h3>
+              <p class="en">今天去哪裡玩？・travel_crawler</p>
+              <ul class="chips"><li>Python 爬蟲</li><li>政府開放資料</li><li>小組專題</li></ul>
+              <p>空大 Python 課程的小組期末專題：用爬蟲蒐集全台景點、活動、餐廳、旅館和天氣資訊，整合成一個查詢平台，幫忙規劃出遊行程。</p>
+              <div class="actions">
+                <a class="button" href="/projects/travel-crawler/">看介紹</a>
+                <a href="https://github.com/3mofstudy/travel_crawler">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <div class="card soon" role="note">
+            <div>
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+  <path d="M50 14 C76 14 84 40 82 62 C80 76 68 82 50 82 C32 82 20 76 18 62 C16 40 24 14 50 14 Z" fill="#fff" stroke="#2B2F4A" stroke-width="3.5" stroke-dasharray="6 6"/>
+  <g fill="none" stroke="#2B2F4A" stroke-width="3.5" stroke-linecap="round"><path d="M34 54 q5 4 10 0"/><path d="M56 54 q5 4 10 0"/></g>
+  <text x="70" y="22" font-family="Huninn, sans-serif" font-size="16" fill="#2B2F4A">…</text>
+</svg>
+              <strong>下一個作品孵化中</strong>
+              小墨魚正在慢慢做，做好會放在這裡。
             </div>
           </div>
-        </article>
-        <p class="next">下一款工具製作中。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="links" aria-labelledby="links-title">
+      <div class="wrap">
+        <h2 id="links-title"><svg class="dot" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="#CDEFE3" stroke="#2B2F4A" stroke-width="2.5"/><circle cx="7.5" cy="7.5" r="2" fill="#fff"/></svg>找到我</h2>
+        <p class="sub">文章、電子書和家教服務，分散在這幾個地方。</p>
+        <div class="links">
+          <a class="link-card" href="https://vocus.cc/salon/lucy-r">
+            <span class="tape" aria-hidden="true"></span>
+            <span class="ico"><svg viewBox="0 0 40 40" aria-hidden="true"><g stroke="#2B2F4A" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"><rect x="6" y="6" width="22" height="28" rx="4" fill="#FFE4EA"/><path d="M11 14h12M11 20h12M11 26h7" fill="none"/><path d="M27 28 L35 12 L38 14 L30 30 L26 32 Z" fill="#FF5E6C"/></g></svg></span>
+            <span class="where">方格子 vocus・部落格</span>
+            <h3>慵懶貓系的小墨魚</h3>
+            <p>數據外的日常觀察：統計小知識、R 實戰、AI 與自動化、氣候議題，還有書評和生活隨筆。</p>
+            <span class="go">去讀文章</span>
+          </a>
+          <a class="link-card" href="https://3mofstudy.app/basicRnotes/">
+            <span class="tape" aria-hidden="true"></span>
+            <span class="ico"><svg viewBox="0 0 40 40" aria-hidden="true"><g stroke="#2B2F4A" stroke-width="2.6" stroke-linejoin="round"><path d="M20 10 C15 6 9 6 5 8 L5 32 C9 30 15 30 20 33 Z" fill="#CDEFE3"/><path d="M20 10 C25 6 31 6 35 8 L35 32 C31 30 25 30 20 33 Z" fill="#fff"/></g><text x="27.5" y="25" text-anchor="middle" font-family="Huninn, sans-serif" font-size="11" fill="#3D6FD1">R</text></svg></span>
+            <span class="where">線上電子書</span>
+            <h3>R 語言程式設計（基礎篇）</h3>
+            <p>給想從零開始學 R 的人：不談艱深統計原理，專心把程式基本功打穩。</p>
+            <span class="go">翻開電子書</span>
+          </a>
+          <a class="link-card" href="https://www.pro360.com.tw/service/141644">
+            <span class="tape" aria-hidden="true"></span>
+            <span class="ico"><svg viewBox="0 0 40 40" aria-hidden="true"><g stroke="#2B2F4A" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"><path d="M4 8 h32 v20 h-18 l-7 6 v-6 h-7 Z" fill="#FFE7A3"/><path d="M12 22 v-4M18 22 v-8M24 22 v-6M30 22 v-10" fill="none"/></g></svg></span>
+            <span class="where">PRO360・統計服務</span>
+            <h3>露西統計</h3>
+            <p>統計家教、R / SPSS / Stata 等軟體教學，以及論文統計諮詢與分析，可視訊上課。</p>
+            <span class="go">看服務內容</span>
+          </a>
+        </div>
+        <div class="mini-links">
+          <a href="https://github.com/3mofstudy"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+          <a href="mailto:contact@3mofstudy.app"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7 l8 6 l8 -6"/></g></svg>contact@3mofstudy.app</a>
+        </div>
       </div>
     </section>
 
     <section class="section" id="about" aria-labelledby="about-title">
-      <div class="wrap">
-        <h2 id="about-title">關於</h2>
-        <p>小墨魚工作室由 3mofstudy 一人經營。做的都是自己天天會用的工具：先解決自己的麻煩，再分享給有同樣需要的人。</p>
-        <p>有問題或建議，寫信到 <a href="mailto:contact@3mofstudy.app">contact@3mofstudy.app</a>，或到 <a href="https://github.com/3mofstudy">GitHub</a> 回報。</p>
+      <div class="wrap about">
+        <div>
+          <h2 id="about-title"><svg class="dot" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="#FFE7A3" stroke="#2B2F4A" stroke-width="2.5"/><circle cx="7.5" cy="7.5" r="2" fill="#fff"/></svg>關於</h2>
+          <p>我是露西，網路上大家叫我小墨魚。早年在醫院和大學當研究助理，從收集臨床資料、跑統計分析裡找到最喜歡的工作；後來自學 R，跨進氣象數據分析，在資料的路上越走越遠。</p>
+          <p>小墨魚異想天空工作室是我一個人的小角落。做的都是自己天天會用的東西：先解決自己的麻煩，再分享給有同樣需要的人。</p>
+          <p>有問題或想法，歡迎寫信到 <a href="mailto:contact@3mofstudy.app">contact@3mofstudy.app</a>，或到 <a href="https://github.com/3mofstudy">GitHub</a> 留言回報。</p>
+        </div>
+        <div class="bubble-box float-card">
+          <h3>小墨魚的日常</h3>
+          <ul>
+            <li>白天：統計分析、建模、整理數據</li>
+            <li>晚上：讀書、寫方格子、寫電子書</li>
+            <li>兼差：陪研究生搞定論文統計</li>
+            <li>假日：做一點讓生活更順手的小工具</li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-foot">
+    <svg class="wave" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 Q25 0 50 14 Q75 28 100 14 Q125 0 150 14 Q175 28 200 14 Q225 0 250 14 Q275 28 300 14 Q325 0 350 14 Q375 28 400 14 Q425 0 450 14 Q475 28 500 14 Q525 0 550 14 Q575 28 600 14 Q625 0 650 14 Q675 28 700 14 Q725 0 750 14 Q775 28 800 14 Q825 0 850 14 Q875 28 900 14 Q925 0 950 14 Q975 28 1000 14 Q1025 0 1050 14 Q1075 28 1100 14 Q1125 0 1150 14 Q1175 28 1200 14 L1200 28 L0 28 Z" fill="currentColor"/></svg>
     <div class="wrap">
-      <span>© 2026 小墨魚工作室</span>
+      <span class="sign"><img src="/favicon.svg" alt="" width="32" height="32">© 2026 小墨魚異想天空工作室・慢慢做、好好用</span>
       <nav aria-label="頁尾">
-        <a href="/recipelens/privacy.html">食影筆記隱私權政策</a>
-        <a href="mailto:contact@3mofstudy.app">聯絡我們</a>
+        <a href="/projects/recipelens/privacy.html">食影筆記隱私權政策</a>
+        <a href="/projects/recipelens/terms.html">食影筆記服務條款</a>
+        <a href="https://vocus.cc/salon/lucy-r">方格子</a>
+        <a href="https://3mofstudy.app/basicRnotes/">R 語言電子書</a>
+        <a href="https://www.pro360.com.tw/service/141644">PRO360</a>
         <a href="https://github.com/3mofstudy">GitHub</a>
+        <a href="mailto:contact@3mofstudy.app">寫信給我</a>
       </nav>
     </div>
   </footer>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>出遊小幫手：今天去哪裡玩？｜小墨魚異想天空工作室</title>
+  <meta name="description" content="出遊小幫手：空大 Python 課程小組期末專題，用爬蟲蒐集台灣景點、活動、餐廳、旅館與天氣資料，整合成出遊查詢平台。">
+  <meta name="theme-color" content="#FFF8EE">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="小墨魚異想天空工作室首頁">
+        <img src="/favicon.svg" alt="" width="38" height="38">
+        小墨魚異想天空工作室
+      </a>
+      <nav class="site-nav" aria-label="主要">
+        <a href="/#works" aria-current="page">作品</a>
+        <a href="/#links">找到我</a>
+        <a href="/#about">關於</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="app-hero">
+      <div class="wrap">
+        <svg class="icon-wrap" viewBox="0 0 100 100" role="img" aria-label="出遊小幫手圖示">
+  <rect x="2" y="2" width="96" height="96" rx="24" fill="#fff" stroke="#2B2F4A" stroke-width="4"/>
+  <path d="M14 34 L36 26 L62 34 L86 26 V72 L62 80 L36 72 L14 80 Z" fill="#CDEFE3" stroke="#2B2F4A" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M36 26 V72 M62 34 V80" stroke="#2B2F4A" stroke-width="2.5" stroke-dasharray="4 4"/>
+  <path d="M22 62 q10 -10 20 -2 t22 -4" fill="none" stroke="#FFC24B" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 6"/>
+  <path d="M66 58 C58 46 52 40 52 32 C52 23 59 17 66 17 C73 17 80 23 80 32 C80 40 74 46 66 58 Z" fill="#FF5E6C" stroke="#2B2F4A" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="66" cy="32" r="5.5" fill="#fff" stroke="#2B2F4A" stroke-width="2.5"/>
+</svg>
+        <div>
+          <p class="crumbs"><a href="/#works">作品</a> ／ 空大作業</p>
+          <h1>出遊小幫手</h1>
+          <p class="en">今天去哪裡玩？・travel_crawler</p>
+          <p class="lead">空大 Python 課程的小組期末報告。用 Python 爬蟲從政府公開資訊蒐集全台各縣市的旅遊資料，整合到同一個平台，讓出遊前的查詢和比較變簡單。</p>
+          <div class="actions">
+            <a class="button" href="https://github.com/3mofstudy/travel_crawler">到 GitHub 看看</a>
+            <a href="https://github.com/3mofstudy/travel_crawler/blob/main/出遊小幫手_使用手冊.pdf">使用手冊 PDF</a>
+            <a href="https://github.com/3mofstudy/travel_crawler/blob/main/出遊小幫手開發文件.pdf">開發文件 PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="wave" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 Q25 0 50 14 Q75 28 100 14 Q125 0 150 14 Q175 28 200 14 Q225 0 250 14 Q275 28 300 14 Q325 0 350 14 Q375 28 400 14 Q425 0 450 14 Q475 28 500 14 Q525 0 550 14 Q575 28 600 14 Q625 0 650 14 Q675 28 700 14 Q725 0 750 14 Q775 28 800 14 Q825 0 850 14 Q875 28 900 14 Q925 0 950 14 Q975 28 1000 14 Q1025 0 1050 14 Q1075 28 1100 14 Q1125 0 1150 14 Q1175 28 1200 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round"/></svg>
+
+    <section class="section" aria-labelledby="data-title">
+      <div class="wrap">
+        <h2 id="data-title"><svg class="dot" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="#FF5E6C" stroke="#2B2F4A" stroke-width="2.5"/><circle cx="7.5" cy="7.5" r="2" fill="#fff"/></svg>蒐集了哪些資料</h2>
+        <ol class="toc">
+          <li>觀光景點</li>
+          <li>活動資訊</li>
+          <li>餐飲美食</li>
+          <li>旅館民宿</li>
+          <li>天氣預報</li>
+        </ol>
+        <p>每一類資料各有一支爬蟲程式，由組員分工完成，再由主程式整合。</p>
+      </div>
+    </section>
+
+    <section class="section tinted" aria-labelledby="how-title">
+      <div class="wrap">
+        <h2 id="how-title"><svg class="dot" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="#CDEFE3" stroke="#2B2F4A" stroke-width="2.5"/><circle cx="7.5" cy="7.5" r="2" fill="#fff"/></svg>系統怎麼運作</h2>
+        <ol class="steps">
+          <li>
+            <h3>爬蟲抓資料</h3>
+            <p>五支 Python 爬蟲從政府開放資料抓取景點、活動、餐廳、旅館和天氣，用 pandas 整理。</p>
+          </li>
+          <li>
+            <h3>自動更新</h3>
+            <p>主程式部署在 AWS 上定期執行，把最新資料寫進 Google 試算表。</p>
+          </li>
+          <li>
+            <h3>儀表板查詢</h3>
+            <p>用 Google Looker Studio 做成儀表板，選縣市就能一次看到吃喝玩樂和天氣。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="tech-title">
+      <div class="wrap">
+        <h2 id="tech-title"><svg class="dot" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="#FFE7A3" stroke="#2B2F4A" stroke-width="2.5"/><circle cx="7.5" cy="7.5" r="2" fill="#fff"/></svg>用到的技術</h2>
+        <ul class="chips"><li>Python</li><li>requests</li><li>pandas</li><li>gspread</li><li>AWS</li><li>Google Looker Studio</li></ul>
+        <p>這是六人小組的合作專題，從各自寫爬蟲、整合主程式到雲端部署和儀表板設計，一起完成。</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-foot">
+    <svg class="wave" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 Q25 0 50 14 Q75 28 100 14 Q125 0 150 14 Q175 28 200 14 Q225 0 250 14 Q275 28 300 14 Q325 0 350 14 Q375 28 400 14 Q425 0 450 14 Q475 28 500 14 Q525 0 550 14 Q575 28 600 14 Q625 0 650 14 Q675 28 700 14 Q725 0 750 14 Q775 28 800 14 Q825 0 850 14 Q875 28 900 14 Q925 0 950 14 Q975 28 1000 14 Q1025 0 1050 14 Q1075 28 1100 14 Q1125 0 1150 14 Q1175 28 1200 14 L1200 28 L0 28 Z" fill="currentColor"/></svg>
+    <div class="wrap">
+      <span class="sign"><img src="/favicon.svg" alt="" width="32" height="32">© 2026 小墨魚異想天空工作室・慢慢做、好好用</span>
+      <nav aria-label="頁尾">
+        <a href="https://vocus.cc/salon/lucy-r">方格子</a>
+        <a href="https://3mofstudy.app/basicRnotes/">R 語言電子書</a>
+        <a href="https://www.pro360.com.tw/service/141644">PRO360</a>
+        <a href="https://github.com/3mofstudy">GitHub</a>
+        <a href="mailto:contact@3mofstudy.app">寫信給我</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

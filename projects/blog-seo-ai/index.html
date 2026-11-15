@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>blog-seo-ai 部落格 SEO 小幫手｜小墨魚異想天空工作室</title>
+  <meta name="description" content="blog-seo-ai：本地端 CLI 工具，把部落格文章的 Markdown 丟進去，用 LLM 挑 SEO 關鍵字、寫 meta description、產生圖片檔名與 alt 文字。">
+  <meta name="theme-color" content="#FFF8EE">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="小墨魚異想天空工作室首頁">
+        <img src="/favicon.svg" alt="" width="38" height="38">
+        小墨魚異想天空工作室
+      </a>
+      <nav class="site-nav" aria-label="主要">
+        <a href="/#works" aria-current="page">作品</a>
+        <a href="/#links">找到我</a>
+        <a href="/#about">關於</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="app-hero">
+      <div class="wrap">
+        <svg class="icon-wrap" viewBox="0 0 100 100" role="img" aria-label="blog-seo-ai 圖示">
+  <rect x="2" y="2" width="96" height="96" rx="24" fill="#fff" stroke="#2B2F4A" stroke-width="4"/>
+  <path d="M22 16 H58 L72 30 V82 H22 Z" fill="#E3DEFF" stroke="#2B2F4A" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M58 16 V30 H72" fill="#fff" stroke="#2B2F4A" stroke-width="3" stroke-linejoin="round"/>
+  <text x="30" y="40" font-family="Huninn, sans-serif" font-size="14" fill="#2B2F4A">.md</text>
+  <g stroke="#2B2F4A" stroke-width="3" stroke-linecap="round"><path d="M30 50 H54"/><path d="M30 58 H48"/><path d="M30 66 H44"/></g>
+  <circle cx="64" cy="64" r="13" fill="#fff" stroke="#2B2F4A" stroke-width="4"/>
+  <path d="M73 73 L84 84" stroke="#FF5E6C" stroke-width="7" stroke-linecap="round"/>
+  <path d="M60 60 q4 -4 8 0" fill="none" stroke="#FFC24B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M80 18 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5 Z" fill="#FFE7A3" stroke="#2B2F4A" stroke-width="2" stroke-linejoin="round"/>
+</svg>
+        <div>
+          <p class="crumbs"><a href="/#works">作品</a> ／ CLI 工具</p>
+          <h1>blog-seo-ai</h1>
+          <p class="en">部落格 SEO 小幫手・本地端 CLI</p>
+          <p class="lead">文章寫完之後，最煩的是那些 SEO 小事。把部落格文章的 .md 丟進去，用 LLM 一次搞定：挑關鍵字、寫 meta description、看懂圖片再取好檔名和 alt 文字。</p>
+          <div class="actions">
+            <a class="button" href="https://github.com/3mofstudy/blog-seo-ai">到 GitHub 看看</a>
+            <a href="https://github.com/3mofstudy/blog-seo-ai#安裝">安裝說明</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="wave" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 Q25 0 50 14 Q75 28 100 14 Q125 0 150 14 Q175 28 200 14 Q225 0 250 14 Q275 28 300 14 Q325 0 350 14 Q375 28 400 14 Q425 0 450 14 Q475 28 500 14 Q525 0 550 14 Q575 28 600 14 Q625 0 650 14 Q675 28 700 14 Q725 0 750 14 Q775 28 800 14 Q825 0 850 14 Q875 28 900 14 Q925 0 950 14 Q975 28 1000 14 Q1025 0 1050 14 Q1075 28 1100 14 Q1125 0 1150 14 Q1175 28 1200 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round"/></svg>
+
+    <section class="section" aria-labelledby="what-title">
+      <div class="wrap">
+        <h2 id="what-title"><svg class="dot" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="#FF5E6C" stroke="#2B2F4A" stroke-width="2.5"/><circle cx="7.5" cy="7.5" r="2" fill="#fff"/></svg>一次搞定三件事</h2>
+        <ol class="steps">
+          <li>
+            <h3>挑 SEO 關鍵字</h3>
+            <p>讀完整篇文章，提出適合的關鍵字，數量和字數上限都能調整。</p>
+          </li>
+          <li>
+            <h3>寫 meta description</h3>
+            <p>產生幾則不同角度的摘要，字數範圍可自訂，挑最喜歡的一則。</p>
+          </li>
+          <li>
+            <h3>圖片檔名與 alt</h3>
+            <p>看懂每張圖片，給出有意義的檔名和 alt 文字。檔名和 alt 分開挑，可以混搭不同模型的結果。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section tinted" aria-labelledby="flow-title">
+      <div class="wrap">
+        <h2 id="flow-title"><svg class="dot" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="#CDEFE3" stroke="#2B2F4A" stroke-width="2.5"/><circle cx="7.5" cy="7.5" r="2" fill="#fff"/></svg>分析 → 挑選 → 套用</h2>
+        <dl class="facts">
+          <dt>分析</dt><dd>呼叫模型產生建議，寫進 output/ 資料夾。這一步絕不修改原始檔案，中間結果也能手動改。</dd>
+          <dt>挑選</dt><dd>互動選單逐項挑：採用某個模型的建議、自己輸入，或不採用。不呼叫模型，不花錢，可以重跑到滿意。</dd>
+          <dt>套用</dt><dd>唯一會改檔的一步：改寫圖片路徑與 alt、幫圖片改名、把關鍵字和摘要寫進 front matter。可以先預覽，也會自動備份。</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="model-title">
+      <div class="wrap">
+        <h2 id="model-title"><svg class="dot" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="#FFE7A3" stroke="#2B2F4A" stroke-width="2.5"/><circle cx="7.5" cy="7.5" r="2" fill="#fff"/></svg>模型隨你選</h2>
+        <ul class="chips"><li>Hugging Face（預設、免費額度）</li><li>Claude</li><li>OpenAI</li><li>Gemini</li></ul>
+        <p>預設用 Hugging Face 的免費模型，也可以改用 Claude、OpenAI 或 Gemini。文字和圖片可以用不同模型，還會換算每次花費（新台幣），並能限制最多分析幾張圖來控制成本。</p>
+        <p>需要 Python 3.13 以上，建議用 pipx 安裝，之後在任何資料夾打 <code>blog-seo-ai</code> 就能用：</p>
+        <pre class="code"><code>pipx install git+https://github.com/3mofstudy/blog-seo-ai.git
+blog-seo-ai 文章.md</code></pre>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-foot">
+    <svg class="wave" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 Q25 0 50 14 Q75 28 100 14 Q125 0 150 14 Q175 28 200 14 Q225 0 250 14 Q275 28 300 14 Q325 0 350 14 Q375 28 400 14 Q425 0 450 14 Q475 28 500 14 Q525 0 550 14 Q575 28 600 14 Q625 0 650 14 Q675 28 700 14 Q725 0 750 14 Q775 28 800 14 Q825 0 850 14 Q875 28 900 14 Q925 0 950 14 Q975 28 1000 14 Q1025 0 1050 14 Q1075 28 1100 14 Q1125 0 1150 14 Q1175 28 1200 14 L1200 28 L0 28 Z" fill="currentColor"/></svg>
+    <div class="wrap">
+      <span class="sign"><img src="/favicon.svg" alt="" width="32" height="32">© 2026 小墨魚異想天空工作室・慢慢做、好好用</span>
+      <nav aria-label="頁尾">
+        <a href="https://vocus.cc/salon/lucy-r">方格子</a>
+        <a href="https://3mofstudy.app/basicRnotes/">R 語言電子書</a>
+        <a href="https://www.pro360.com.tw/service/141644">PRO360</a>
+        <a href="https://github.com/3mofstudy">GitHub</a>
+        <a href="mailto:contact@3mofstudy.app">寫信給我</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
